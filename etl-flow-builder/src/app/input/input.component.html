@@ -1,0 +1,4 @@
+<div id="search">
+  <img *ngIf="icon" src="{{icon}}">
+  <input type="text" class="{{icon ? 'inputWithIcon': ''}}" placeholder="{{placeholder}}" (input)="emitChange($event)" [(ngModel)]="text">
+</div>

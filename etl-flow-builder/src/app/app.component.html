@@ -1,0 +1,59 @@
+<app-header
+  (runClicked)="runFlow()"
+  (discardClicked)="clear()"
+  (saveClicked)="save()"
+  (openClicked)="open($event)"
+>
+
+</app-header>
+<div id="leftcard" [hidden]="leftPanelHidden">
+  <div id="closecard" hidden (click)="leftPanelHidden = !leftPanelHidden">
+    <img src="assets/closeleft.svg">
+  </div>
+  <p id="header">Actions</p>
+  <div class="search-container">
+    <app-input [icon]="'assets/search.svg'" [placeholder]="'Search in actions'"></app-input>
+  </div>
+  <div id="subnav">
+<!--    <div *ngFor="let category of categories" (click)="setSelected(category.text)" class="{{ category.selected ? 'side navactive' : 'side navdisabled'}}">{{category.text}}</div>-->
+    <div id="nav1" (click)="setSelected(0)" class="{{ categories[0].selected ? 'side navactive' : 'side navdisabled'}}">{{categories[0].text}}</div>
+    <div id="nav2" (click)="setSelected(1)" class="{{ categories[1].selected ? 'side navactive' : 'side navdisabled'}}">{{categories[1].text}}</div>
+    <div id="nav3" (click)="setSelected(2)" class="{{ categories[2].selected ? 'side navactive' : 'side navdisabled'}}">{{categories[2].text}}</div>
+  </div>
+  <div id="blocklist">
+    <div *ngFor="let action of actionFiltered" class="blockelem create-flowy noselect">
+      <input type="hidden" name='blockelemtype' class="blockelemtype" [value]="action.id">
+      <div class="grabme">
+        <img src="assets/grabme.svg">
+      </div>
+      <div class="blockin">
+        <div class="blockico">
+          <span></span>
+          <img [src]="action.icon">
+        </div>
+        <div class="blocktext">
+          <p class="blocktitle">{{ action.type }}</p>
+          <p class="blockdesc">{{ action.description }}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="footer">
+    <a href="" target="_blank">GitHub</a>
+    <span>·</span>
+    <a href="" target="_blank">Twitter</a>
+    <span>·</span>
+    <a href="" target="_blank"><p>Made with</p><img src="assets/heart.svg"><p>by</p> r0cket404</a>
+  </div>
+</div>
+<div id="propwrap" class="{{ showMenu ? 'itson' : ''}}">
+  <div id="properties" class="{{ showMenu ? 'expanded' : ''}}">
+    <div id="close" (click)="showMenu = false">
+      <img src="assets/close.svg">
+    </div>
+    <p id="header2">Properties</p>
+    <app-action-properties *ngIf="selectedAction > -1" [(currentAction)]="actionConfiguration[selectedAction]"></app-action-properties>
+  </div>
+</div>
+<div #canvas id="canvas" class="canvas" (click)="canvaClicked($event)"></div>
+<ng-template #alertZone></ng-template>

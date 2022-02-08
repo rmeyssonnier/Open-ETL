@@ -1,0 +1,24 @@
+<div id="navigation">
+  <div id="leftside">
+    <div id="details">
+      <div id="back"><img src="assets/arrow.svg"></div>
+      <div id="names">
+        <p id="title">ETL Automation pipeline</p>
+        <p id="subtitle">New pipeline</p>
+      </div>
+    </div>
+  </div>
+  <div id="centerswitch">
+<!--    <div id="leftswitch">Diagram view</div>-->
+<!--    <div id="rightswitch">Code editor</div>-->
+  </div>
+  <div id="buttonsright">
+      <div id="discard" (click)="discardClicked.emit()">Discard</div>
+      <div style="width: 250px;   display: inline-block;margin-right: 10px">
+        <app-dropdown [items]="pipelineNames()" [(selected)]="selected"></app-dropdown>
+      </div>
+      <div class="publish" (click)="open()">Open</div>
+      <div class="publish" (click)="saveClicked.emit()">Save</div>
+      <div class="publish" (click)="runClicked.emit()">Run</div>
+  </div>
+</div>

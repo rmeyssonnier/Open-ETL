@@ -1,0 +1,19 @@
+<div id="propswitch">
+  <div id="dataprop">Options</div>
+  <div id="alertprop"></div>
+  <div id="logsprop"></div>
+</div>
+
+<ng-container *ngIf="currentAction">
+  <app-extract-http-action *ngIf="currentAction.type == 'Extract HTTP'" [(configuration)]="currentAction.configuration"></app-extract-http-action>
+  <app-extract-minio-action *ngIf="currentAction.type == 'Extract Minio'" [(configuration)]="currentAction.configuration"></app-extract-minio-action>
+  <app-transform-rename-columns *ngIf="currentAction.type == 'Rename columns'" [(configuration)]="currentAction.configuration"></app-transform-rename-columns>
+  <app-transform-keep-columns *ngIf="currentAction.type == 'Keep columns'" [(configuration)]="currentAction.configuration"></app-transform-keep-columns>
+  <app-transform-remove-columns *ngIf="currentAction.type == 'Remove columns'" [(configuration)]="currentAction.configuration"></app-transform-remove-columns>
+  <app-load-postgres-action *ngIf="currentAction.type == 'Load postgres'" [(configuration)]="currentAction.configuration"></app-load-postgres-action>
+  <app-load-minio-action *ngIf="currentAction.type == 'Load minio'" [(configuration)]="currentAction.configuration"></app-load-minio-action>
+</ng-container>
+
+
+<div id="divisionthing"></div>
+<div id="removeblock">Delete blocks</div>

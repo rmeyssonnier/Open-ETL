@@ -1,0 +1,29 @@
+<div id="proplist">
+
+  <div class="lineContainer">
+    <p class="inputlabel">Ressource URL</p>
+    <app-input placeholder="http(s)://..." [(text)]="configuration.url" (textChange)="notifyChanges()"></app-input>
+  </div>
+
+  <div class="lineContainer">
+    <p class="inputlabel">File format</p>
+    <app-dropdown [placeholder]="'Select file format'" [items]="['JSON', 'CSV', 'XML']" [(selected)]="configuration.format" (selectedChange)="notifyChanges()"></app-dropdown>
+  </div>
+
+  <ng-container *ngIf="configuration.format == 'CSV'">
+    <div class="lineContainer">
+      <p class="inputlabel">Column separator</p>
+      <app-input placeholder=";" [(text)]="configuration.csvFormat.colDelimiter" (textChange)="notifyChanges()"></app-input>
+    </div>
+
+    <div class="lineContainer">
+      <p class="inputlabel">Line separator</p>
+      <app-input placeholder="\n" [(text)]="configuration.csvFormat.lineDelimiter" (textChange)="notifyChanges()"></app-input>
+    </div>
+
+<!--    <div class="lineContainer">-->
+<!--      <p class="inputlabel">Have header line ?</p>-->
+<!--      <app-dropdown [placeholder]="'File have header ?'" [items]="['True', 'False']" [(selected)]="configuration.format.csvFormat.haveHeader" (selectedChange)="notifyChanges()"></app-dropdown>-->
+<!--    </div>-->
+  </ng-container>
+</div>

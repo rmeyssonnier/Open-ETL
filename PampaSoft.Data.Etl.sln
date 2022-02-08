@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PampaSoft.Data.Etl.Engine", "PampaSoft.Data.Etl.Engine\PampaSoft.Data.Etl.Engine.csproj", "{282C7B8D-61F3-45E1-BE8D-EA527C82EF8E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PampaSoft.Data.Etl.Tests", "PampaSoft.Data.Etl.Tests\PampaSoft.Data.Etl.Tests.csproj", "{102E79A6-BEA2-4DF0-A9F2-98A7F883DC56}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PampaSoft.Data.Etl.Api", "PampaSoft.Data.Etl.Api\PampaSoft.Data.Etl.Api.csproj", "{EFBC9C8A-0696-4255-84D1-9AF6EB6D9411}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{282C7B8D-61F3-45E1-BE8D-EA527C82EF8E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{282C7B8D-61F3-45E1-BE8D-EA527C82EF8E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{282C7B8D-61F3-45E1-BE8D-EA527C82EF8E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{282C7B8D-61F3-45E1-BE8D-EA527C82EF8E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{102E79A6-BEA2-4DF0-A9F2-98A7F883DC56}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{102E79A6-BEA2-4DF0-A9F2-98A7F883DC56}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{102E79A6-BEA2-4DF0-A9F2-98A7F883DC56}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{102E79A6-BEA2-4DF0-A9F2-98A7F883DC56}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EFBC9C8A-0696-4255-84D1-9AF6EB6D9411}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EFBC9C8A-0696-4255-84D1-9AF6EB6D9411}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EFBC9C8A-0696-4255-84D1-9AF6EB6D9411}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EFBC9C8A-0696-4255-84D1-9AF6EB6D9411}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal

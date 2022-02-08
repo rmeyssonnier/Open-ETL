@@ -1,0 +1,23 @@
+<div id="proplist">
+
+  <div class="lineContainer">
+    <p class="inputlabel">Ressource URL</p>
+    <app-input placeholder="" [(text)]="configuration.url" (textChange)="notifyChanges()"></app-input>
+  </div>
+
+  <div class="lineContainer">
+    <p class="inputlabel">Database</p>
+    <app-input placeholder="" [(text)]="configuration.database" (textChange)="notifyChanges()"></app-input>
+  </div>
+
+  <div class="lineContainer">
+    <p class="inputlabel">Username</p>
+    <app-input placeholder="" [(text)]="configuration.username" (textChange)="notifyChanges()"></app-input>
+  </div>
+
+  <div class="lineContainer">
+    <p class="inputlabel">Password</p>
+    <app-input placeholder="" [(text)]="configuration.password" (textChange)="notifyChanges()"></app-input>
+  </div>
+
+</div>

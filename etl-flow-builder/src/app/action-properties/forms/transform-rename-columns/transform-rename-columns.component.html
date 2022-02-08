@@ -1,0 +1,11 @@
+<div id="proplist">
+  <div class="lineContainer">
+    <p class="inputlabel">Old columns names</p>
+    <app-input placeholder="col1;col2;.." [(text)]="oldNames" (textChange)="notifyChanges()"></app-input>
+  </div>
+
+  <div class="lineContainer">
+    <p class="inputlabel">New column names</p>
+    <app-input placeholder="col1;col2;.." [(text)]="newNames" (textChange)="notifyChanges()"></app-input>
+  </div>
+</div>

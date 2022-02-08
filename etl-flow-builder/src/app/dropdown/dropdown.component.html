@@ -1,0 +1,10 @@
+<div class="dropme">
+  <img src="assets/dropdown.svg" class="dropdownImg" (click)="showDropdown = !showDropdown">
+
+  <span class="dropdownPlaceholder" *ngIf="!selected">{{placeholder}}</span>
+  <span *ngIf="selected">{{selected}}</span>
+
+  <div *ngIf="showDropdown" class="dropdownContent">
+    <span *ngFor="let item of items" class="dropdownElement" (click)="selectItem(item)">{{item}}</span>
+  </div>
+</div>

@@ -1,0 +1,28 @@
+<div id="proplist">
+
+  <div class="lineContainer">
+    <p class="inputlabel">Ressource URL</p>
+    <app-input placeholder="http(s)://...:9000" [(text)]="configuration.url" (textChange)="notifyChanges()"></app-input>
+  </div>
+
+  <div class="lineContainer">
+    <p class="inputlabel">Access key</p>
+    <app-input placeholder="" [(text)]="configuration.accessKey" (textChange)="notifyChanges()"></app-input>
+  </div>
+
+  <div class="lineContainer">
+    <p class="inputlabel">Secret key</p>
+    <app-input placeholder="" [(text)]="configuration.secretKey" (textChange)="notifyChanges()"></app-input>
+  </div>
+
+  <div class="lineContainer">
+    <p class="inputlabel">Bucket</p>
+    <app-input placeholder="" [(text)]="configuration.bucket" (textChange)="notifyChanges()"></app-input>
+  </div>
+
+  <div class="lineContainer">
+    <p class="inputlabel">Prefix</p>
+    <app-input placeholder="path/file..." [(text)]="configuration.path" (textChange)="notifyChanges()"></app-input>
+  </div>
+
+</div>
