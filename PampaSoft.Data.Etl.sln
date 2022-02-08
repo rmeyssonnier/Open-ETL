@@ -4,7 +4,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PampaSoft.Data.Etl.Engine",
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PampaSoft.Data.Etl.Tests", "PampaSoft.Data.Etl.Tests\PampaSoft.Data.Etl.Tests.csproj", "{102E79A6-BEA2-4DF0-A9F2-98A7F883DC56}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PampaSoft.Data.Etl.Api", "PampaSoft.Data.Etl.Api\PampaSoft.Data.Etl.Api.csproj", "{EFBC9C8A-0696-4255-84D1-9AF6EB6D9411}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PampaSoft.Data.Etl.WebApp", "PampaSoft.Data.Etl.WebApp\PampaSoft.Data.Etl.WebApp.csproj", "{013CD219-0195-4F92-BCE8-AC13AB059795}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -20,9 +20,9 @@ Global
 		{102E79A6-BEA2-4DF0-A9F2-98A7F883DC56}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{102E79A6-BEA2-4DF0-A9F2-98A7F883DC56}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{102E79A6-BEA2-4DF0-A9F2-98A7F883DC56}.Release|Any CPU.Build.0 = Release|Any CPU
-		{EFBC9C8A-0696-4255-84D1-9AF6EB6D9411}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{EFBC9C8A-0696-4255-84D1-9AF6EB6D9411}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{EFBC9C8A-0696-4255-84D1-9AF6EB6D9411}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{EFBC9C8A-0696-4255-84D1-9AF6EB6D9411}.Release|Any CPU.Build.0 = Release|Any CPU
+		{013CD219-0195-4F92-BCE8-AC13AB059795}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{013CD219-0195-4F92-BCE8-AC13AB059795}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{013CD219-0195-4F92-BCE8-AC13AB059795}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{013CD219-0195-4F92-BCE8-AC13AB059795}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

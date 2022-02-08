@@ -7,7 +7,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 
-namespace PampaSoft.Data.Etl.Api
+namespace PampaSoft.Data.Etl.WebApp
 {
     public class Program
     {

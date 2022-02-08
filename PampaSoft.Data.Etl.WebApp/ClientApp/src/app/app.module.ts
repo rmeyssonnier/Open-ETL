@@ -41,7 +41,8 @@ import {LoadMinioActionComponent} from "./action-properties/forms/load-minio-act
     BrowserModule,
     AppRoutingModule,
     FormsModule,
-    HttpClientModule
+    HttpClientModule,
+    BrowserModule.withServerTransition({ appId: 'ng-cli-universal' }),
   ],
   providers: [HttpClientModule, AlertService],
   bootstrap: [AppComponent],
